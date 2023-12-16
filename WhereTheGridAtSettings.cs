@@ -16,5 +16,6 @@ namespace WhereTheGridAt
         public ColorNode GridColor { get; set; } = new ColorNode(Color.White);
         public RangeNode<int> GridSize { get; set; } = new RangeNode<int>(60, 1, 600);
         public RangeNode<int> PathingTileMinimumValue { get; set; } = new RangeNode<int>(0, 0, 20);
+        public RangeNode<int> PathingTileMaximumValue { get; set; } = new RangeNode<int>(5, 0, 20);
     }
 }

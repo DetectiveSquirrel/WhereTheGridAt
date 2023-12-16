@@ -163,7 +163,7 @@ namespace WhereTheGridAt
         private bool IsValidPathfindingPosition(Vector2N position)
         {
             // Check pathfinding value
-            return IngameData.GetPathfindingValueAt(position) >= Settings.PathingTileMinimumValue;
+            return IngameData.GetPathfindingValueAt(position) >= Settings.PathingTileMinimumValue && IngameData.GetPathfindingValueAt(position) <= Settings.PathingTileMaximumValue;
         }
 
         private void CheckAndAddLineSegment(Vector2N PlayerPos, int x1, int y1, int x2, int y2, Camera camera, List<(Vector2N, Vector2N)> gridLines)
