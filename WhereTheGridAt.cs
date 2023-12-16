@@ -98,7 +98,7 @@ namespace WhereTheGridAt
 
             foreach (var line in GridData)
             {
-                _backGroundWindowPtr.AddLine(line.Item1, line.Item2, Settings.GridColor.Value.ToImgui());
+                _backGroundWindowPtr.AddLine(line.Item1, line.Item2, Settings.GridColor.Value.ToImgui(), Settings.GridLineThickness.Value);
             }
 
             ImGui.End();
